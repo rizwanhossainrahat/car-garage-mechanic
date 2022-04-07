@@ -10,7 +10,7 @@ const AddService = () => {
     const onSubmit = data =>{ 
         // console.log(data)
         // axios use kore data pathano /backend a giye fire asbe database thake
-        axios.post('http://localhost:5000/services',data)
+        axios.post('https://fierce-shelf-86694.herokuapp.com/services',data)
         .then(res=>{
             console.log(res)
             if(res.data.insertedId){
